@@ -142,6 +142,7 @@ h1 {
   padding: 8px;
   border-radius: 50%;
   transition: background-color 0.2s;
+  touch-action: manipulation;
 }
 
 .btn-theme:active {
@@ -173,6 +174,7 @@ h1 {
   box-shadow: none;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  touch-action: manipulation;
 }
 
 .nav-tab.active {
@@ -267,6 +269,7 @@ button {
   cursor: pointer;
   transition: transform 0.1s, background-color 0.2s, box-shadow 0.2s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  touch-action: manipulation; /* Impede zoom ao tocar repetidamente */
 }
 
 button:active {
@@ -620,6 +623,7 @@ body:not(.light-mode) #search-overlay {
   display: flex;
   align-items: center;
   justify-content: center;
+  touch-action: manipulation;
 }
 
 .btn-mic:active {
@@ -655,6 +659,7 @@ body:not(.light-mode) #search-overlay {
   cursor: pointer;
   opacity: 0.7;
   transition: opacity 0.2s, transform 0.1s;
+  touch-action: manipulation;
 }
 
 .btn-limpar:active {
@@ -698,6 +703,7 @@ body:not(.light-mode) #search-overlay {
   box-shadow: none;
   border-radius: 0;
   height: 100%;
+  touch-action: manipulation;
 }
 
 .swipe-btn:active {
@@ -737,6 +743,7 @@ body:not(.light-mode) #search-overlay {
   justify-content: center;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   padding: 0;
+  touch-action: manipulation;
 }
 
 /* ===== STATUS SAVE ===== */
@@ -834,6 +841,7 @@ body.light-mode .toast {
   padding: 16px;
   font-size: 15px;
   border-radius: 20px;
+  touch-action: manipulation;
 }
 
 #modal-btn-cancel {
@@ -889,6 +897,7 @@ body.light-mode .toast {
   padding: 6px;
   box-shadow: none;
   line-height: 1;
+  touch-action: manipulation;
 }
 
 .calc-close:active {
@@ -926,6 +935,7 @@ body.light-mode .toast {
   padding: 18px 0;
   font-weight: 600;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  touch-action: manipulation; /* Impede zoom nos botões da calculadora */
 }
 
 .calc-bg-op {
@@ -949,6 +959,7 @@ body.light-mode .toast {
   font-size: 14px;
   border-radius: 20px;
   margin-top: 8px;
+  touch-action: manipulation;
 }
 
 /* ===== ALERTA MODAL ===== */
@@ -993,6 +1004,7 @@ body.light-mode .toast {
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 .fechar-whatsnew:active {
@@ -1023,6 +1035,7 @@ body.light-mode .toast {
   color: var(--accent);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.2s;
+  touch-action: manipulation;
 }
 
 .btn-calc-revert:active {
